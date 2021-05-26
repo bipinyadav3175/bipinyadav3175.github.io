@@ -1,0 +1,466 @@
+// Importing all the fonts here
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@400;500;700;900&family=Raleway:wght@200;300;400;500;700;900&display=swap');
+
+
+// Declaring all variables here
+$light : #E7E7E9;
+$blue : #005FF9;
+$dark : #202020;
+
+
+
+
+
+// All mixins here
+@mixin out_cont {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+@mixin in_cont {
+    width: 80%;
+}
+
+// Designing starts here
+html{
+    font-size: 10px;
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    outline: none;
+    list-style: none;
+    text-decoration: none;
+    font-family: 'Raleway', sans-serif;
+    scroll-behavior: smooth;
+}
+
+body{
+    min-height: 100vh;
+    background-color: $light;
+}
+
+header{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+
+    .navbar{
+        width: 80%;
+        height: inherit;
+        min-height: 10rem;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+
+
+        .left h1{
+            font-size: 4rem;
+            letter-spacing: 0.3rem;
+            font-weight: 600;
+            color: rgba(0, 0, 0, 0.9);
+            transition: all 0.15s ease;
+
+            &:hover{
+                color: black;
+                cursor: pointer;
+            }
+        }
+        .right{
+            a{
+                font-size: 2rem;
+                color: rgba(0, 0, 0, 0.5);
+                font-weight: 600;
+                margin: 0 3rem;
+                transition: color 0.15s ease;
+
+                &:hover{
+                    color: rgba(0, 0, 0, 0.8);
+                }
+            }
+        }
+    }
+}
+
+.hero_cont{
+    @include out_cont();
+    padding-top: 5rem;
+
+    .hero{
+        @include in_cont();
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+
+        .l_hero{
+            width: 50%;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            position: relative;
+
+
+            &::before{
+                content: '';
+                position: absolute;
+                background: url('../assets/flame.png') no-repeat center;
+                background-size: contain;
+                width: 10rem;
+                height: 10rem;
+                top: -7.6rem;
+                left: -7.6rem;
+            }
+
+            p{
+                font-size: 2rem;
+                color: rgba(0, 0, 0, 0.8);
+                margin-top: 2rem;
+            }
+            a button{
+                width: 15rem;
+                height: 5rem;
+                border-radius: 1.6rem;
+                border: none;
+                background-color: $blue;
+                color: #fff;
+                margin-top: 2rem;
+                font-size: 1.8rem;
+                font-weight: 500;
+                transition: background-color 0.15s ease;
+
+                &:hover{
+                    cursor: pointer;
+                    background-color: #0456db;
+                }
+            }
+
+            h1{
+                font-size: 7rem;
+                font-family: 'Noto Sans JP', sans-serif;
+                line-height: 8rem;
+            }
+        }
+
+        .r_hero{
+            width: 50%;
+            img{
+                width: 100%;
+                object-fit: contain;
+            }
+        }
+            
+
+    }
+    
+}
+
+
+.services_cont{
+    @include out_cont();
+    padding-top: 5rem;
+
+
+    .services{
+        @include in_cont();
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+
+
+        .services_box{
+            width: 100%;
+            height: 25rem;
+            margin: 5rem 0rem;
+            background-color: #202020;
+            border-radius: 1.6rem;
+            transition: all 0.25s ease;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            box-shadow: 21px 10px 36px -17px rgba(0,0,0,0.2);
+
+            &:hover{
+                box-shadow: 21px 10px 36px -17px rgba(0,0,0,0.5);
+                cursor: pointer;
+            }
+
+            .ser{
+                width: 50%;
+                height: 100%;
+            }
+
+            .arrow{
+                position: relative;
+
+                &::before{
+                    content: '';
+                    position: absolute;
+                    background: url('../assets/arrow.svg') no-repeat center;
+                    width: 13rem;
+                    height: 13rem;
+                    top: 50%;
+                    left: 45%;
+                    transform: translate(-50%, -50%);
+                }
+
+                img{
+                    width: 30%;
+                    object-fit: contain;
+                }
+                .html{
+                    position: absolute;
+                    top: 3rem;
+                    right: 5rem;
+                }
+                .psd{
+                    position: absolute;
+                    bottom: 3rem;
+                    left: 0;
+                }
+            }
+
+            .r_ser{
+                display: flex;
+                justify-content: center;
+                flex-direction: column;
+                padding: 2rem 2rem;
+                color: #fff;
+
+                h2{
+                    font-size: 3rem;
+                    margin-bottom: 2rem;
+                }
+
+
+                p{
+                    font-size: 1.8rem;
+                    color: rgba(255, 255, 255, 0.8);
+                    text-align: justify;
+                }
+            }
+
+        }
+    }
+}
+
+.center{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    .land,.design{
+        height: 95%;
+        object-fit: contain;
+    }
+}
+
+.hireMeContainer{
+    @include out_cont();
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 2rem 0;
+
+    a button{
+        width: 35rem;
+        height: 7rem;
+        border: none;
+        border-radius: 1.6rem;
+        background-color: $dark;
+        color: #fff;
+        font-size: 3rem;
+        font-weight: 700;
+        transition: all 0.15s ease-in-out;
+
+        &:hover{
+            box-shadow: 2rem 2rem 2rem -1rem rgba($color: #000000, $alpha: 0.25);
+            background-color: #131212;
+            cursor: pointer;
+
+        }
+    }
+}
+
+
+.burger{
+    display: none;
+}
+
+footer{
+    min-height: 5rem;
+    width: 100%;
+    background-color: $dark;
+    color: $light;
+    font-size: 1.5rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 10rem;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+// Media Quries starts from here
+
+
+@media(max-width:1017px){
+    html{
+        font-size: 9px;
+    }
+}
+@media(max-width:924px){
+    html{
+        font-size: 7px;
+    }
+}
+
+
+
+@media (max-width:734px){
+    html{
+        font-size: 6px;
+    }
+    
+    
+    
+}
+@media(max-width:610px){
+    .right{
+        position: fixed;
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-start;
+        align-items: center;
+        top: 0;
+        right: -100%;
+        width: 100vw;
+        height: 100vh;
+        background-color: $light;
+        z-index: 999;
+        transition: all 0.5s ease-in-out;
+
+        a{
+            margin-top: 15rem !important;
+            font-size: 4rem !important;
+        }
+    }
+
+    .burger{
+        display: block;
+        font-size: 4rem;
+        transition: all 0.5s ease-in-out;
+    }
+    .nav_toggle{
+        right: 0;
+    }
+    .cut{
+        z-index: 1000;
+    }
+
+    .hero_cont .hero{
+        width: 95%;
+        flex-direction: column-reverse;
+        justify-content: center;
+        align-items: center;
+
+        .l_hero{
+            width: 80%;
+            align-items: center;
+            margin-top: 5rem;
+
+            a button{
+                width: 20rem;
+                height: 7rem;
+                font-size: 2rem;
+                margin-top: 5rem;
+
+            }
+
+            h1,p{
+                text-align: center;
+            }
+        }
+
+        .r_hero{
+            width: 100%;
+        }
+    }
+
+    .services_cont{
+
+        .services{
+            width: 95%;
+
+
+            .services_box{
+                flex-direction: column;
+                height: 50rem;
+
+                .ser{
+                    width: 100%;
+                    height: 50%;
+
+                    .html{
+                        top: 5rem;
+                        right: 3rem;
+                    }
+
+                    .psd{
+                        bottom: -4rem;
+                    }
+                }
+            }
+            
+        }
+    }
+
+    footer{
+        margin-top: 5rem;
+    }
+    
+}
+
+

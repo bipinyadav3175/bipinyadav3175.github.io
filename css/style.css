@@ -1,0 +1,488 @@
+@import url("https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@400;500;700;900&family=Raleway:wght@200;300;400;500;700;900&display=swap");
+html {
+  font-size: 10px;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  outline: none;
+  list-style: none;
+  text-decoration: none;
+  font-family: 'Raleway', sans-serif;
+  scroll-behavior: smooth;
+}
+
+body {
+  min-height: 100vh;
+  background-color: #E7E7E9;
+}
+
+header {
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+header .navbar {
+  width: 80%;
+  height: inherit;
+  min-height: 10rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+header .navbar .left h1 {
+  font-size: 4rem;
+  letter-spacing: 0.3rem;
+  font-weight: 600;
+  color: rgba(0, 0, 0, 0.9);
+  -webkit-transition: all 0.15s ease;
+  transition: all 0.15s ease;
+}
+
+header .navbar .left h1:hover {
+  color: black;
+  cursor: pointer;
+}
+
+header .navbar .right a {
+  font-size: 2rem;
+  color: rgba(0, 0, 0, 0.5);
+  font-weight: 600;
+  margin: 0 3rem;
+  -webkit-transition: color 0.15s ease;
+  transition: color 0.15s ease;
+}
+
+header .navbar .right a:hover {
+  color: rgba(0, 0, 0, 0.8);
+}
+
+.hero_cont {
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding-top: 5rem;
+}
+
+.hero_cont .hero {
+  width: 80%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.hero_cont .hero .l_hero {
+  width: 50%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  position: relative;
+}
+
+.hero_cont .hero .l_hero::before {
+  content: '';
+  position: absolute;
+  background: url("../assets/flame.png") no-repeat center;
+  background-size: contain;
+  width: 10rem;
+  height: 10rem;
+  top: -7.6rem;
+  left: -7.6rem;
+}
+
+.hero_cont .hero .l_hero p {
+  font-size: 2rem;
+  color: rgba(0, 0, 0, 0.8);
+  margin-top: 2rem;
+}
+
+.hero_cont .hero .l_hero a button {
+  width: 15rem;
+  height: 5rem;
+  border-radius: 1.6rem;
+  border: none;
+  background-color: #005FF9;
+  color: #fff;
+  margin-top: 2rem;
+  font-size: 1.8rem;
+  font-weight: 500;
+  -webkit-transition: background-color 0.15s ease;
+  transition: background-color 0.15s ease;
+}
+
+.hero_cont .hero .l_hero a button:hover {
+  cursor: pointer;
+  background-color: #0456db;
+}
+
+.hero_cont .hero .l_hero h1 {
+  font-size: 7rem;
+  font-family: 'Noto Sans JP', sans-serif;
+  line-height: 8rem;
+}
+
+.hero_cont .hero .r_hero {
+  width: 50%;
+}
+
+.hero_cont .hero .r_hero img {
+  width: 100%;
+  -o-object-fit: contain;
+     object-fit: contain;
+}
+
+.services_cont {
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding-top: 5rem;
+}
+
+.services_cont .services {
+  width: 80%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.services_cont .services .services_box {
+  width: 100%;
+  height: 25rem;
+  margin: 5rem 0rem;
+  background-color: #202020;
+  border-radius: 1.6rem;
+  -webkit-transition: all 0.25s ease;
+  transition: all 0.25s ease;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-shadow: 21px 10px 36px -17px rgba(0, 0, 0, 0.2);
+          box-shadow: 21px 10px 36px -17px rgba(0, 0, 0, 0.2);
+}
+
+.services_cont .services .services_box:hover {
+  -webkit-box-shadow: 21px 10px 36px -17px rgba(0, 0, 0, 0.5);
+          box-shadow: 21px 10px 36px -17px rgba(0, 0, 0, 0.5);
+  cursor: pointer;
+}
+
+.services_cont .services .services_box .ser {
+  width: 50%;
+  height: 100%;
+}
+
+.services_cont .services .services_box .arrow {
+  position: relative;
+}
+
+.services_cont .services .services_box .arrow::before {
+  content: '';
+  position: absolute;
+  background: url("../assets/arrow.svg") no-repeat center;
+  width: 13rem;
+  height: 13rem;
+  top: 50%;
+  left: 45%;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+}
+
+.services_cont .services .services_box .arrow img {
+  width: 30%;
+  -o-object-fit: contain;
+     object-fit: contain;
+}
+
+.services_cont .services .services_box .arrow .html {
+  position: absolute;
+  top: 3rem;
+  right: 5rem;
+}
+
+.services_cont .services .services_box .arrow .psd {
+  position: absolute;
+  bottom: 3rem;
+  left: 0;
+}
+
+.services_cont .services .services_box .r_ser {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  padding: 2rem 2rem;
+  color: #fff;
+}
+
+.services_cont .services .services_box .r_ser h2 {
+  font-size: 3rem;
+  margin-bottom: 2rem;
+}
+
+.services_cont .services .services_box .r_ser p {
+  font-size: 1.8rem;
+  color: rgba(255, 255, 255, 0.8);
+  text-align: justify;
+}
+
+.center {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.center .land, .center .design {
+  height: 95%;
+  -o-object-fit: contain;
+     object-fit: contain;
+}
+
+.hireMeContainer {
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 2rem 0;
+}
+
+.hireMeContainer a button {
+  width: 35rem;
+  height: 7rem;
+  border: none;
+  border-radius: 1.6rem;
+  background-color: #202020;
+  color: #fff;
+  font-size: 3rem;
+  font-weight: 700;
+  -webkit-transition: all 0.15s ease-in-out;
+  transition: all 0.15s ease-in-out;
+}
+
+.hireMeContainer a button:hover {
+  -webkit-box-shadow: 2rem 2rem 2rem -1rem rgba(0, 0, 0, 0.25);
+          box-shadow: 2rem 2rem 2rem -1rem rgba(0, 0, 0, 0.25);
+  background-color: #131212;
+  cursor: pointer;
+}
+
+.burger {
+  display: none;
+}
+
+footer {
+  min-height: 5rem;
+  width: 100%;
+  background-color: #202020;
+  color: #E7E7E9;
+  font-size: 1.5rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin-top: 10rem;
+}
+
+@media (max-width: 1017px) {
+  html {
+    font-size: 9px;
+  }
+}
+
+@media (max-width: 924px) {
+  html {
+    font-size: 7px;
+  }
+}
+
+@media (max-width: 734px) {
+  html {
+    font-size: 6px;
+  }
+}
+
+@media (max-width: 610px) {
+  .right {
+    position: fixed;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-pack: start;
+        -ms-flex-pack: start;
+            justify-content: flex-start;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    top: 0;
+    right: -100%;
+    width: 100vw;
+    height: 100vh;
+    background-color: #E7E7E9;
+    z-index: 999;
+    -webkit-transition: all 0.5s ease-in-out;
+    transition: all 0.5s ease-in-out;
+  }
+  .right a {
+    margin-top: 15rem !important;
+    font-size: 4rem !important;
+  }
+  .burger {
+    display: block;
+    font-size: 4rem;
+    -webkit-transition: all 0.5s ease-in-out;
+    transition: all 0.5s ease-in-out;
+  }
+  .nav_toggle {
+    right: 0;
+  }
+  .cut {
+    z-index: 1000;
+  }
+  .hero_cont .hero {
+    width: 95%;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: reverse;
+        -ms-flex-direction: column-reverse;
+            flex-direction: column-reverse;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  .hero_cont .hero .l_hero {
+    width: 80%;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    margin-top: 5rem;
+  }
+  .hero_cont .hero .l_hero a button {
+    width: 20rem;
+    height: 7rem;
+    font-size: 2rem;
+    margin-top: 5rem;
+  }
+  .hero_cont .hero .l_hero h1, .hero_cont .hero .l_hero p {
+    text-align: center;
+  }
+  .hero_cont .hero .r_hero {
+    width: 100%;
+  }
+  .services_cont .services {
+    width: 95%;
+  }
+  .services_cont .services .services_box {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    height: 50rem;
+  }
+  .services_cont .services .services_box .ser {
+    width: 100%;
+    height: 50%;
+  }
+  .services_cont .services .services_box .ser .html {
+    top: 5rem;
+    right: 3rem;
+  }
+  .services_cont .services .services_box .ser .psd {
+    bottom: -4rem;
+  }
+  footer {
+    margin-top: 5rem;
+  }
+}
+/*# sourceMappingURL=style.css.map */
