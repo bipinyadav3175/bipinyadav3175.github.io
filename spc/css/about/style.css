@@ -1,0 +1,47 @@
+#about {
+  color: #FFD200;
+}
+
+.about {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  padding: 5rem 0;
+}
+
+.about h1 {
+  font-size: 4rem;
+}
+
+.about .center {
+  width: 50%;
+}
+
+.about .center p {
+  font-size: 1.7rem;
+  margin: 2rem 0rem;
+  text-align: center;
+}
+
+@media (max-width: 1155px) {
+  .about_cont .about .center {
+    width: 70%;
+  }
+}
+
+@media (max-width: 646px) {
+  .about_cont .about .center {
+    width: 90%;
+  }
+}
+/*# sourceMappingURL=style.css.map */
