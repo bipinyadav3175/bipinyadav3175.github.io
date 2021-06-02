@@ -1,0 +1,90 @@
+// Variables
+$bg: #f9f9f9;
+$dark: #2F3653;
+$yellow: #FFD200;
+$light_blue: #9AAEFF;
+
+
+html{
+    font-size: 10px;
+}
+
+#services{
+    color: $yellow;
+}
+
+
+.services{
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    flex-direction: column;
+    padding: 5rem 0;
+    min-height: 80vh;
+
+    h1{
+        font-size: 4rem;
+        margin-bottom: 10rem;
+    }
+
+    .center{
+        width: 50%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        margin-top: 3rem;
+        padding-bottom: 5rem;
+
+        
+
+        h2{
+            margin: 2rem 0rem;
+            font-size: 3rem;
+
+            .tick{
+                color: green;
+            }
+        }
+
+    }
+}
+
+
+
+
+
+
+// Media Quries
+
+@media (max-width:1307px){
+    html{
+        font-size: 9px;
+    }
+}
+
+
+@media (max-width:1229px){
+    html{
+        font-size: 8px;
+    }
+}
+
+@media (max-width:987px){
+    html{
+        font-size: 7px;
+    }
+}
+
+@media (max-width:838px){
+    html{
+        font-size: 6px;
+    }
+}
+
+@media (max-width:740px){
+    .center{
+        width: 90% !important;
+    }
+}
+
