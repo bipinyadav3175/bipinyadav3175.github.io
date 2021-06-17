@@ -1,0 +1,91 @@
+ <!-- Footer Starts from Here -->
+    <footer>
+        <div class="footer_cont">
+
+            <div class="footer_left">
+                <img src="./assets/strongpointlogo/strong-point-logo-dark-cropped.png" alt="Strong Point">
+                <a href="./contact.php"><button class="btn">Contact Us</button></a>
+    
+            </div>
+    
+            <div class="footer_right">
+                <a href="./index.html" id="home">HOME</a>
+                <a href="./services.html" id="services">SERVICES</a>
+                <a href="./about.html" id="about">ABOUT US</a>
+                <a href="./contact.php" id="contact">CONTACT US</a>
+                <a href="./careers.html" id="careers">CAREERS</a>
+            </div>
+        </div>
+        <div class="copyright">
+            Copyright © 2021
+        </div>
+    </footer>
+    <!-- Footer Ends Here -->
+
+
+    // Footer
+footer{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    width: 100%;
+    background-color: #C9C9C9;
+    .footer_cont{
+        width: 90%;
+        // height: 13rem;
+        margin-top: 2rem;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+
+    
+
+        .footer_left{
+            width: 30%;
+            // height: 100%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+
+            img{
+                height: 10rem;
+                object-fit: contain;
+            }
+
+            .btn{
+                width: 15rem;
+                height: 4rem;
+                background-color: #533EFF;
+                color: #fff;
+                border-radius: 0.5rem;
+                font-size: 1.2rem;
+                margin-top: 1rem;
+                cursor: pointer;
+            }
+        }
+        .footer_right{
+            width: 70%;
+            // height: 100%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+
+            a{
+                color: #000 !important;
+                font-weight: 600;
+                font-size: 1.5rem;
+                margin: 0rem 1rem;
+
+            }
+        }
+    }
+
+    .copyright{
+        font-size: 1.2rem;
+        color: #000;
+        margin-bottom: 1rem;
+        margin-top: 2rem;
+    }
+}

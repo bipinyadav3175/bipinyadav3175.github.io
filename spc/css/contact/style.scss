@@ -1,0 +1,243 @@
+// Importing Fonts
+
+
+
+
+// Variables
+$bg: #f9f9f9;
+$dark: #2F3653;
+$yellow: #FFD200;
+$light_blue: #9AAEFF;
+
+
+// Main css
+html{
+    font-size: 10px;
+}
+
+
+#contact{
+    color: $yellow;
+}
+
+.contact{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    margin-top: 5rem;
+    min-height: 80vh;
+
+    .contact_left{
+
+        h3{
+            font-size: 2rem;
+        }
+        p,a{
+            font-size: 1.8rem;
+            font-weight: 400;
+        }
+
+        .m_top{
+            margin-top: 2.5rem;
+        }
+
+        .linkedin{
+            font-size: 3rem;
+            color: #0e76a8;
+        }
+        .twitter{
+            font-size: 3rem;
+            color: 	#1DA1F2;
+        }
+    }
+}
+
+form{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+
+    
+
+    label{
+        font-size: 1.5rem;
+        margin-bottom: 0.5rem;
+    }
+
+    input{
+        background-color: #f2f2f2;
+        border: 1px solid #e0e0e0;
+        border-radius: 0.8rem;
+        height: 3rem;
+    }
+
+    input,textarea{
+        padding: 0 2rem;
+    }
+    
+    h3{
+        font-size: 2rem;
+        margin-bottom: 2rem;
+    }
+
+    .name_cont{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        width: 100%;
+
+        .name_sub_cont{
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: flex-start;
+        }
+        .fname_cont{
+            margin-right: 1rem;
+        }
+        .lname_cont{
+            margin-left: 1rem;
+        }
+
+    }
+
+    .email_cont{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: flex-start;
+        width: 100%;
+        margin-top: 2rem;
+
+        input{
+            width: 100%;
+        }
+
+            
+    }
+    .message_cont{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: flex-start;
+        width: 100%;
+        margin-top: 2rem;
+
+        textarea{
+            width: 100%;
+            background-color: #f2f2f2;
+            border: 1px solid #e0e0e0;
+            border-radius: 0.8rem;
+            resize: none;
+            padding: 1rem 2rem;
+        }
+
+    }
+
+    button{
+        width: 10rem;
+        height: 3rem;
+        border-radius: 0.8rem;
+        background-color: #533EFF;
+        color: #fff;
+        font-weight: 600;
+        font-size: 1.5rem;
+        margin-top: 2rem;
+        cursor: pointer;
+    }
+}
+
+.danger{
+    text-align: center;
+    width: 100%;
+    align-content: center;
+    padding: 1.5rem;
+    font-weight: 400;
+    font-size: 2rem;
+    border-radius: 0.8rem;
+    margin-bottom: 2rem;
+    display: none;
+}
+.danger_good{
+    display: block;
+    background: rgba(0, 128, 0, 0.404);
+    border: 1px solid rgba(0, 128, 0, 0.562);
+}
+.danger_bad{
+    display: block;
+    background: #ff00005e;
+    border: 1px solid #ff00007e;
+}
+
+footer{
+    margin-top: 10rem;
+}
+
+// Media Quries of Responsive Page
+
+@media (max-width:1307px){
+    html{
+        font-size: 9px;
+    }
+}
+
+
+@media (max-width:1229px){
+    html{
+        font-size: 8px;
+    }
+}
+
+@media (max-width:987px){
+    html{
+        font-size: 7px;
+    }
+}
+
+@media (max-width:838px){
+    html{
+        font-size: 6px;
+    }
+}
+
+@media (max-width:660px){
+    .contact_cont{
+        .contact{
+            flex-direction: column-reverse;
+
+            .contact_left{
+                margin-top: 7rem;
+                text-align: center;
+            }
+        }
+    }
+}
+
+@media (max-width:568px){
+    .contact_right{
+        width: 90%;
+
+        form{
+            width: 100%;
+        }
+    }
+
+    
+}
+
+@media (max-width:512px){
+    .name_cont{
+        flex-direction: column;
+    }
+    .name_sub_cont{
+        width: 100%;
+        margin-left: 0 !important;
+        margin-right: 0 !important;
+        margin-top: 2rem;
+
+        input{
+            width: 100%;
+        }
+    }
+}
